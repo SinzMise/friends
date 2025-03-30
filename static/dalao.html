@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>友链检测结果</title>
+    <title>大佬友链检测结果</title>
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <style>
         body {
@@ -75,7 +75,7 @@
 <body>
 
 <div class="container">
-    <h1>友链检测结果（小伙伴）<a href="/dalao.html">大佬移步这里</a></h1>
+    <h1>友链检测结果（大佬）<a href="/index.html">小伙伴移步这里</a></h1>
     <p id="summary"></p>
     
     <table>
@@ -98,7 +98,7 @@
 
 <script>
     // 从 result.json 文件中获取数据
-    fetch('./result.json')
+    fetch('./result-dalao.json')
         .then(response => response.json())
         .then(data => {
             // 提取整体统计信息
