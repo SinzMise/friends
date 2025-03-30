@@ -16,7 +16,7 @@ jobs:
 
     steps:
     - name: Pull latest repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v2
 
     - name: Setup Node.js latest
       uses: actions/setup-node@main
@@ -57,7 +57,7 @@ jobs:
         git init
         git add .
         git commit -m "⏱️GitHub Action每日定时更新"
-        git push --force https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:page
+        git push --force https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }}.git HEAD:page
     
     - name: Delete Workflow Runs
       uses: Mattraks/delete-workflow-runs@v2
