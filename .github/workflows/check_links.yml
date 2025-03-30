@@ -5,6 +5,7 @@ on:
     - cron: '0 1 * * *'
     - cron: '0 13 * * *'
   workflow_dispatch:
+  push:
 
 env:
   TZ: Asia/Shanghai
@@ -15,7 +16,7 @@ jobs:
 
     steps:
     - name: Pull latest repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Setup Node.js latest
       uses: actions/setup-node@main
