@@ -2,144 +2,167 @@ import json
 import requests
 import warnings
 import time
+import os
 import concurrent.futures
 from datetime import datetime
 from queue import Queue
-import os
 
-# 忽略警告信息
 warnings.filterwarnings("ignore", message="Unverified HTTPS request is being made.*")
 
-# 用户代理字符串，模仿浏览器
-user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+HEADERS = {"User-Agent": USER_AGENT}
 
-# API Key 和 请求URL的模板
-# 判断是否在本地运行，如果是则从环境变量中获取API Key
 if os.getenv("LIJIANGAPI_TOKEN") is None:
-    print("本地运行，从环境变量中加载并获取API Key")
+    print("本地运行，从环境变量中加载并获取环境变量")
     from dotenv import load_dotenv
     load_dotenv()
-else:
-    print("在服务器上运行，从环境变量中获取API Key")
 
-api_key = os.getenv("LIJIANGAPI_TOKEN")
-api_url_template = "https://api.nsmao.net/api/web/query?key={}&url={}"
+env_loaded = os.getenv("LIJIANGAPI_TOKEN")
+print("本地运行，从环境变量中加载 API Key" if not env_loaded else "在服务器上运行，从环境变量中获取 API Key")
 
-# 代理链接的模板，代理是通过在代理地址后加目标 URL 来请求，代理地址确保以 / 结尾
-proxy_url = os.getenv("PROXY_URL")
-if proxy_url is not None:
-    proxy_url_template = proxy_url + "{}"
-else:
-    proxy_url_template = None
+API_KEY = os.getenv("LIJIANGAPI_TOKEN")
+API_URL_TEMPLATE = f"https://api.nsmao.net/api/web/query?key={API_KEY}&url={{}}" if API_KEY else None
+PROXY_URL_TEMPLATE = f"{os.getenv('PROXY_URL')}{{}}" if os.getenv("PROXY_URL") else None
+print("代理 URL 获取成功" if PROXY_URL_TEMPLATE else "未提供代理 URL")
 
-# 初始化一个队列来处理API请求
 api_request_queue = Queue()
+RESULT_FILE = './result-dalao.json'
 
-# API 请求处理函数，确保每秒不超过5次请求
-def handle_api_requests():
-    while not api_request_queue.empty():
-        time.sleep(0.2)  # 控制API请求速率，确保每秒不超过5次
-        item = api_request_queue.get()
-        headers = {"User-Agent": user_agent}
-        link = item['link']
-        if api_key is None:
-            print("API Key 未提供，无法通过API访问")
-            item['latency'] = -1
-            break
-        api_url = api_url_template.format(api_key, link)
 
-        try:
-            response = requests.get(api_url, headers=headers, timeout=30)
-            response_data = response.json()
+def load_previous_results():
+    """加载上次检查结果"""
+    if os.path.exists(RESULT_FILE):
+        with open(RESULT_FILE, 'r', encoding='utf-8') as file:
+            try:
+                return json.load(file)
+            except json.JSONDecodeError:
+                print("JSON 解析错误，使用空数据")
+                return {}
+    return {}
 
-            # 提取API返回的code和exec_time
-            if response_data['code'] == 200:
-                latency = round(response_data['exec_time'], 2)
-                print(f"成功通过API访问 {link}, 延迟为 {latency} 秒")
-                item['latency'] = latency
-            else:
-                print(f"API返回错误，code: {response_data['code']}，无法访问 {link}")
-                item['latency'] = -1
-        except requests.RequestException:
-            print(f"API请求失败，无法访问 {link}")
-            item['latency'] = -1
 
-        time.sleep(0.2)  # 控制API请求速率，确保每秒不超过5次
+def save_results(data):
+    """保存检测结果"""
+    with open(RESULT_FILE, 'w', encoding='utf-8') as file:
+        json.dump(data, file, ensure_ascii=False, indent=4)
 
-# 检查链接是否可访问的函数并测量时延
-def check_link_accessibility(item):
-    headers = {"User-Agent": user_agent}
+def check_link(item):
+    """检查友链可访问性"""
     link = item['link']
-    latency = -1
 
-    # 1. 首先尝试直接访问
-    try:
-        start_time = time.time()
-        response = requests.get(link, headers=headers, timeout=15, verify=True)
-        latency = round(time.time() - start_time, 2)
-        if response.status_code == 200:
-            print(f"成功通过直接访问 {link}, 延迟为 {latency} 秒")
-            return [item, latency]
-    except requests.RequestException:
-        print(f"直接访问失败 {link}")
-
-    # 2. 尝试通过代理访问(可选)
-    if proxy_url_template is None:
-        print("未提供代理地址，无法通过代理访问")
-    else:
-        proxy_url = proxy_url_template.format(link)
+    for method, url in [("直接访问", link), ("代理访问", PROXY_URL_TEMPLATE.format(link) if PROXY_URL_TEMPLATE else None)]:
+        if not url:
+            continue
         try:
             start_time = time.time()
-            response = requests.get(proxy_url, headers=headers, timeout=15, verify=True)
+            response = requests.get(url, headers=HEADERS, timeout=15, verify=True)
             latency = round(time.time() - start_time, 2)
+
             if response.status_code == 200:
-                print(f"成功通过代理访问 {link}, 延迟为 {latency} 秒")
-                return [item, latency]
+                print(f"成功通过 {method} 访问 {link} , 延迟 {latency} 秒")
+                return item, latency
         except requests.RequestException:
-            print(f"代理访问失败 {link}")
+            print(f"{method} 失败: {link}")
 
-    # 3. 如果代理也失败，添加到API队列中
-    item['latency'] = -1
     api_request_queue.put(item)
-    return [item, latency]
+    return item, -1
 
-# 目标JSON数据的URL
-json_url = 'flink-dalao.json'
 
-with open(json_url, 'r', encoding='utf-8') as file:
-    data = json.load(file)
-link_list = data['link_list']  # 提取所有的链接项
+def handle_api_requests():
+    """处理 API 请求"""
+    updated_results = []
+    while not api_request_queue.empty():
+        time.sleep(0.2)
+        item = api_request_queue.get()
+        link = item['link']
 
-# 使用ThreadPoolExecutor并发检查多个链接
-with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
-    results = list(executor.map(check_link_accessibility, link_list))
+        if not API_URL_TEMPLATE:
+            print("API Key 未提供，无法通过 API 访问")
+            continue
 
-# 处理API请求
-handle_api_requests()
+        try:
+            response = requests.get(API_URL_TEMPLATE.format(link), headers=HEADERS, timeout=30)
+            response_data = response.json()
 
-# 添加时延信息到每个链接项
-link_status = [{'blog': result[0]['name'],'desc': result[0]['descr'], 'url': result[0]['link'], 'avatar': result[0]['avatar'], 'latency': result[0].get('latency', result[1])} for result in results]
+            if (response_data.get('code') == 200 and
+                response_data.get('data') and (
+                    response_data.get('data').get('title') not in ["", None] or
+                    response_data.get('data').get('keywords') not in ["", None] or
+                    response_data.get('data').get('description') not in ["", None]
+                )):
+                latency = round(response_data.get('exec_time', -1), 2)
+                print(f"成功通过 API 访问 {link} , 延迟 {latency} 秒")
+                item['latency'] = latency
+            else:
+                print(f"API 访问失败: {link} , 错误代码 {response_data.get('code')}")
+                item['latency'] = -1
+        except requests.RequestException:
+            print(f"API 请求失败: {link}")
+            item['latency'] = -1
 
-# 获取当前时间
-current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        updated_results.append(item)  # 记录更新后的结果
+        time.sleep(0.2)
 
-# 统计可访问和不可访问的链接数，计算 accessible_count 和 inaccessible_count
-accessible_count = 0
-inaccessible_count = 0
+    return updated_results
 
-for result in results:
-    # print(result[1])
-    if result[1] != -1:
-        accessible_count += 1
-    else:
-        inaccessible_count += 1
 
-# 计算 total_count
-total_count = len(results)
+def main():
+    json_url = './flink-dalao.json'
+    with open(json_url, 'r', encoding='utf-8') as file:
+        data = json.load(file)
+    if not data:
+        return
 
-# 将结果写入JSON文件
-output_json_path = './result-dalao.json'
-with open(output_json_path, 'w', encoding='utf-8') as file:
-    json.dump(link_status, file, ensure_ascii=False, indent=4)
+    link_list = data.get('link_list', [])
+    previous_results = load_previous_results()
 
-print(f"检查完成，结果已保存至 '{output_json_path}' 文件。")
+    with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+        results = list(executor.map(check_link, link_list))
+
+    # 处理 API 请求，并获取更新后的结果
+    updated_api_results = handle_api_requests()
+
+    # 用 API 结果覆盖原来的结果
+    for updated_item in updated_api_results:
+        for idx, (item, latency) in enumerate(results):
+            if item['link'] == updated_item['link']:
+                results[idx] = (item, updated_item['latency'])  # 更新 latency
+                break
+
+    # 获取当前的友链列表（去重）
+    current_links = {item['link'] for item in link_list}
+
+    link_status = []
+    for item, latency in results:
+        name, link = item['name'], item['link']
+        prev_entry = next((x for x in previous_results.get('link_status', []) if x['link'] == link), None)
+
+        if latency == -1:
+            failed_days = (prev_entry['failed_days'] + 1) if prev_entry and 'failed_days' in prev_entry else 1
+        else:
+            failed_days = 0
+
+        link_status.append({'name': name, 'link': link, 'latency': latency, 'failed_days': failed_days})
+
+    # **删除已被移除的友链**
+    link_status = [entry for entry in link_status if entry['link'] in current_links]
+
+    accessible_count = sum(1 for s in link_status if s['latency'] != -1)
+    total_count = len(link_status)
+    inaccessible_count = total_count - accessible_count
+
+    output_data = {
+        'timestamp': datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        'accessible_count': accessible_count,
+        'inaccessible_count': inaccessible_count,
+        'total_count': total_count,
+        'link_status': link_status
+    }
+
+    save_results(output_data)
+    print(f"共检查 {total_count} 个链接，其中 {accessible_count} 个可访问，{inaccessible_count} 个不可访问。")
+    print(f"检查完成，结果已保存至 '{RESULT_FILE}'。")
+
+
+if __name__ == "__main__":
+    main()
