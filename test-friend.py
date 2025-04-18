@@ -115,6 +115,7 @@ def main():
 
     link_list = data.get('link_list', [])
     previous_results = load_previous_results()
+    print(previous_results)
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
         results = list(executor.map(check_link, link_list))
@@ -134,11 +135,8 @@ def main():
 
     link_status = []
     for item, latency in results:
-        name = item['name']
-        link = item['link']
-        favatar = item['avatar']
-        fdescr = item['descr']
-        prev_entry = next((x for x in previous_results.get('link_status', []) if x['link'] == link), None)
+        name, link, fdescr, favatar = item['name'], item['link'], item['descr'], item['avatar']
+        prev_entry = next((x for x in previous_results.get('link_status', []) if x['url'] == link), None)
 
         if latency == -1:
             failed_days = (prev_entry['failed_days'] + 1) if prev_entry and 'failed_days' in prev_entry else 1

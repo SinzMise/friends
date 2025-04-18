@@ -135,7 +135,7 @@ def main():
     link_status = []
     for item, latency in results:
         name, link, fdescr, favatar = item['name'], item['link'], item['descr'], item['avatar']
-        prev_entry = next((x for x in previous_results.get('link_status', []) if x['link'] == link), None)
+        prev_entry = next((x for x in previous_results.get('link_status', []) if x['url'] == link), None)
 
         if latency == -1:
             failed_days = (prev_entry['failed_days'] + 1) if prev_entry and 'failed_days' in prev_entry else 1
