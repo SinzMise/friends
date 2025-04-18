@@ -134,7 +134,10 @@ def main():
 
     link_status = []
     for item, latency in results:
-        name, link, fdescr, favatar = item['name'], item['link'], item['descr'], item['avatar']
+        name = item['name']
+        link = item['link']
+        favatar = item['avatar']
+        fdescr = item['descr']
         prev_entry = next((x for x in previous_results.get('link_status', []) if x['link'] == link), None)
 
         if latency == -1:
@@ -145,7 +148,7 @@ def main():
         link_status.append({'blog': name, 'url': link, 'desc': fdescr, 'avatar': favatar, 'latency': latency, 'failed_days': failed_days})
 
     # **删除已被移除的友链**
-    link_status = [entry for entry in link_status if entry['link'] in current_links]
+    link_status = [entry for entry in link_status if entry['url'] in current_links]
 
     accessible_count = sum(1 for s in link_status if s['latency'] != -1)
     total_count = len(link_status)
