@@ -134,7 +134,7 @@ def main():
 
     link_status = []
     for item, latency in results:
-        name, link, avatar, descr = item['name'], item['link'], item['avatar'], item['descr']
+        name, link, fdescr, favatar = item['name'], item['link'], item['descr'], item['avatar']
         prev_entry = next((x for x in previous_results.get('link_status', []) if x['link'] == link), None)
 
         if latency == -1:
@@ -142,7 +142,7 @@ def main():
         else:
             failed_days = 0
 
-        link_status.append({'blog': name, 'url': link, 'avatar': avatar, 'desc': descr, 'latency': latency, 'failed_days': failed_days})
+        link_status.append({'blog': name, 'url': link, 'desc': fdescr, 'avatar': favatar, 'latency': latency, 'failed_days': failed_days})
 
     # **删除已被移除的友链**
     link_status = [entry for entry in link_status if entry['link'] in current_links]
