@@ -379,7 +379,7 @@
                         errorLinks++;
                         extraInfo = `<span class="fail-days">已持续${link.failed_days}次</span>`;
                         errorLinksHTML += `<div class="status-card">
-                            <a class="status-link" href="${link.link}" target="_blank" rel="noopener noreferrer noreferrer">${link.name}</a>
+                            <a class="status-link" href="${link.url}" target="_blank" rel="noopener noreferrer noreferrer">${link.blog}</a>
                             <div class="fail-details">
                                 ${extraInfo}
                                 <span class="status-dot ${statusClass}"></span>
@@ -389,13 +389,13 @@
                         statusClass = 'status-slow';
                         slowLinks++;
                         otherLinksHTML += `<div class="status-card">
-                        <a class="status-link" href="${link.link}" target="_blank" rel="noopener noreferrer noreferrer">${link.name}</a>
+                        <a class="status-link" href="${link.url}" target="_blank" rel="noopener noreferrer noreferrer">${link.blog}</a>
                         <span class="status-dot ${statusClass}"></span>
                     </div>`;
                     } else {
                         normalLinks++;
                         otherLinksHTML += `<div class="status-card">
-                        <a class="status-link" href="${link.link}" target="_blank" rel="noopener noreferrer noreferrer">${link.name}</a>
+                        <a class="status-link" href="${link.url}" target="_blank" rel="noopener noreferrer noreferrer">${link.blog}</a>
                         <span class="status-dot ${statusClass}"></span>
                     </div>`;
                     }
