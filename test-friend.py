@@ -115,7 +115,6 @@ def main():
 
     link_list = data.get('link_list', [])
     previous_results = load_previous_results()
-    print(previous_results)
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
         results = list(executor.map(check_link, link_list))
