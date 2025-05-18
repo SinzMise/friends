@@ -1,8 +1,5 @@
 .env
 node_modules/
 package-lock.json
+deno.lock
 rss.json
-result.json
-flink.json
-result-dalao.json
-flink-dalao.json

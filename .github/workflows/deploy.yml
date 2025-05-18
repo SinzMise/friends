@@ -1,0 +1,86 @@
+name: Check Links and Generate JSON
+
+on:
+  schedule:
+    - cron: '0 1 * * *'
+    - cron: '0 13 * * *'
+  workflow_dispatch:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+env:
+  TZ: Asia/Shanghai
+
+jobs:
+  check_links:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Pull latest repository
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js latest
+      uses: actions/setup-node@main
+      with:
+        node-version: "latest"
+
+    - name: Setup Deno 
+      uses: denoland/setup-deno@v1 
+      with:
+        deno-version: "1.40.x"
+
+    - name: Cache Deno dependencies 
+      uses: actions/cache@v3 
+      with:
+        path: |
+          ~/.cache/deno
+          ./deno-deps 
+        key: ${{ runner.os  }}-deno-${{ hashFiles('**/deps.ts')  }}
+        restore-keys: |
+          ${{ runner.os  }}-deno-
+
+    - name: Install dependencies
+      run: | 
+        npm install
+        deno cache server.ts 
+
+    - name: Get rss.json
+      env:
+        LIJIANGAPI_TOKEN: ${{ secrets.LIJIANGAPI_TOKEN }}
+        PROXY_URL: ${{ secrets.PROXY_URL }}
+      run: | 
+        node link.js
+
+    - name: Run tests (optional)
+      run: deno test --allow-read --allow-net 
+
+    - name: Deploy to Deno Deploy 
+      uses: denoland/deployctl@v1 
+      with:
+        project: "your-project-name"  # 替换为你的Deno Deploy项目名
+        entrypoint: "server.ts"        # 你的入口文件
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+        DENO_DEPLOY_TOKEN: ${{ secrets.DENO_DEPLOY_TOKEN }}
+
+    - name: Delete Workflow Runs
+      uses: Mattraks/delete-workflow-runs@v2
+      with:
+        retain_days: 30
+        keep_minimum_runs: 6
+
+  keepalive-workflow:
+    name: Keepalive Workflow
+    if: ${{ always() }}
+    needs: check_links
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: gautamkrishnar/keepalive-workflow@v2
+        with:
+          committer_username: "github-actions[bot]"
+          committer_email: "github-actions[bot]@users.noreply.github.com"

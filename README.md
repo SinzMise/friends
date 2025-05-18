@@ -1,5 +1,6 @@
 # SinzMise's Friends
 
+[![Deploy Status](https://img.shields.io/github/actions/workflow/status/SinzMise/friends/deploy.yml?label=Deploy)](https://github.com/SinzMise/friends/actions) 
 
 ## 和屋主加友链的要求
 
@@ -23,7 +24,7 @@
 我的信息如下：
 
 - 链接：https://blog.storical.space/
-- 头像（128x，WebP）：https://images1.blog.sinzmise.top/profile/icon.avif
+- 头像（128x，WebP）：https://blog.storical.space/images/icon.png
   - Gravatar E-Mail Hash：`e873808e83cf6b677b23b760c77523fb660b5db100791b3cb9a99cd5c25f9e84`
 - 站点名称：汐塔魔法屋
 - 昵称：王九弦SZ·Ninty
@@ -43,10 +44,10 @@
 下述是一个对你有用的示例：
 ```yml
 - name: 汐塔魔法屋
-  link: https://blog.sinzmise.top/
-  avatar: https://blog.sinzmise.top/images/icon.png
-  descr: 种下一颗有故事的种子，让它带着魔法和奇迹生根发芽
-  siteshot: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://blog.sinzmise.top/
+  url: https://blog.storical.space/
+  avatar: https://blog.storical.space/images/icon.png
+  desc: 种下一颗有故事的种子，让它带着魔法和奇迹生根发芽
+  topimg: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://blog.sinzmise.top/
 ```
 
 > [!IMPORTANT]
@@ -54,7 +55,7 @@
 
 确认你填写的信息是否无误，并打开一个 Pull Request。
 
-当你的 Pull Request 按流程顺利合并，之后等待Github Action运行，你的网站会显示在我的友链页（或者缓存刷新后）。
+当你的 Pull Request 按流程顺利合并，之后等待Github Action和Deno Deploy运行，你的网站会显示在我的友链页（或者缓存刷新后）。
 
 ## 写在最后
 
