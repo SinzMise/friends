@@ -47,9 +47,6 @@ jobs:
         deno cache server.ts 
 
     - name: Get rss.json
-      env:
-        LIJIANGAPI_TOKEN: ${{ secrets.LIJIANGAPI_TOKEN }}
-        PROXY_URL: ${{ secrets.PROXY_URL }}
       run: | 
         node link.js
 
