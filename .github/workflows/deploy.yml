@@ -54,13 +54,11 @@ jobs:
       run: | 
         node link.js
 
-    - name: Deploy to Deno Deploy 
-      uses: denoland/deployctl@v1 
-      with:
-        project: "szn-friends"
-        entrypoint: "server.ts"
+    - name: Deploy using Deploy Token 
+      run: |
+        deno install -A -r https://deno.land/x/deploy/deployctl.ts
+        deployctl deploy --project=szn-friends --token=$DENO_DEPLOY_TOKEN server.ts
       env:
-        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         DENO_DEPLOY_TOKEN: ${{ secrets.DENO_DEPLOY_TOKEN }}
 
     - name: Delete Workflow Runs
