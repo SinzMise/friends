@@ -56,7 +56,7 @@ jobs:
     - name: Deploy to Deno Deploy 
       uses: denoland/deployctl@v1 
       with:
-        project: "your-project-name"  # 替换为你的Deno Deploy项目名
+        project: "szn-friends"  # 替换为你的Deno Deploy项目名
         entrypoint: "server.ts"        # 你的入口文件
       env:
         GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
