@@ -49,9 +49,3 @@ jobs:
         deployctl deploy --project=szn-friends --token=$DENO_DEPLOY_TOKEN server.ts
       env:
         DENO_DEPLOY_TOKEN: ${{ secrets.DENO_DEPLOY_TOKEN }}
-
-    - name: Delete Workflow Runs
-      uses: Mattraks/delete-workflow-runs@v2
-      with:
-        retain_days: 30
-        keep_minimum_runs: 6
