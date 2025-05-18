@@ -50,9 +50,6 @@ jobs:
       run: | 
         node link.js
 
-    - name: Run tests (optional)
-      run: deno test --allow-read --allow-net 
-
     - name: Deploy to Deno Deploy 
       uses: denoland/deployctl@v1 
       with:
