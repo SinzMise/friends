@@ -13,6 +13,10 @@ on:
 env:
   TZ: Asia/Shanghai
 
+permissions:
+  id-token: write 
+  contents: read 
+
 jobs:
   check_links:
     runs-on: ubuntu-latest
