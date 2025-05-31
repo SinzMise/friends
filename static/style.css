@@ -7,6 +7,10 @@
   padding: 1.5rem 1.5rem;
 }
 
+.modal-card, .modal-content{
+  margin: 0;
+}
+
 .friend-card {
   height: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
