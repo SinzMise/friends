@@ -25,7 +25,7 @@
         <ul>
             <li><a href="/">友人帐</a></li> 
             <li><a href="/circle">朋友圈</a></li>
-            <li><a href="https://github.com/SinzMise/friends">添加友链</a></li>
+            <li><a href="/about">添加友链/关于</a></li>
         </ul>
       </div>
       <div id="friend-circle-lite-root"></div>
@@ -51,13 +51,16 @@
       <p>
         <a href="https://www.storical.space/">故事空间</a> · <a href="https://blog.storical.space/">汐塔魔法屋</a> · <a href="https://diary.sinzmise.top/">中弦记事本</a> 
       </p>
+      <p>
+        <strong>潮汐友人帐</strong> - 使用 <a href="https://deno.land/">Deno</a>  和 <a href="https://bulma.io/">Bulma</a>  构建 
+      </p>
     </div>
   </footer>
 
   <script src="https://jsd.cdn.sinzmise.top/npm/pjax/pjax.min.js"></script>
   <script>
     let pjax = new Pjax({
-      selectors: ["title",".hero-body","#main","footer"],
+      selectors: ["head",".hero-body","#main","footer"],
       history: true, //是否添加近浏览器历史记录
       pushState: true,//是否启用 pushState。禁用后 Pjax 就变成了 Ajax。
       scrollRestoration: true,//切换页面后，Pjax 将尝试恢复滚动位置。

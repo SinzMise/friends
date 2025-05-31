@@ -2,7 +2,14 @@
 import { Application, Router } from "https://deno.land/x/oak@v12.6.1/mod.ts"; 
 import { parse } from "https://deno.land/std@0.224.0/yaml/mod.ts"; 
 import { join, dirname, fromFileUrl } from "https://deno.land/std@0.224.0/path/mod.ts"; 
- 
+import { marked } from "https://esm.sh/marked"; 
+import prism from "https://esm.sh/prismjs@latest"; 
+
+marked.setOptions({ 
+  highlight: (code, lang) => 
+    prism.highlight(code,  prism.languages[lang]  || prism.languages.javascript,  lang)
+});
+
 const PORT = Deno.env.get("PORT")  || "8000";
 const HOST = Deno.env.get("HOST")  || "0.0.0.0";
 
@@ -95,6 +102,15 @@ router
     const json = await Deno.readTextFile(join(__dirname,  "rss.json")); 
     ctx.response.headers.set("Content-Type",  "application/json");
     ctx.response.body  = json;
+  }).get("/about",  async (ctx) => {
+    const news = await Deno.readTextFile(join(__dirname,  "templates", "about.html")); 
+    const content = await Deno.readTextFile(join(__dirname,  "templates", "README.md")); 
+    const html = marked.parse(content); 
+    const rendered = news 
+      .replace("<!-- ABOUT -->", html);
+    
+    ctx.response.headers.set("Content-Type",  "text/html");
+    ctx.response.body  = rendered;
   });
  
 const app = new Application();
