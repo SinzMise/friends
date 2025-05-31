@@ -2,7 +2,11 @@
 .hero {
   background: linear-gradient(135deg, #00d1b2 0%, #3273dc 100%);
 }
- 
+
+.section{
+  padding: 1.5rem 1.5rem;
+}
+
 .friend-card {
   height: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -32,39 +36,4 @@
   .tabs li {
     margin-bottom: 0.5rem;
   }
-}
- 
-/* 链接卡片动画 */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
- 
-.friend-card {
-  animation: fadeIn 0.5s ease forwards;
-}
- 
-/* 为每个卡片添加延迟动画 */
-.columns.is-multiline  .column:nth-child(1) .friend-card {
-  animation-delay: 0.1s;
-}
- 
-.columns.is-multiline  .column:nth-child(2) .friend-card {
-  animation-delay: 0.2s;
-}
- 
-.columns.is-multiline  .column:nth-child(3) .friend-card {
-  animation-delay: 0.3s;
-}
-
-.columns.is-multiline  .column:nth-child(4) .friend-card {
-  animation-delay: 0.4s;
-}
-
-.columns.is-multiline  .column:nth-child(5) .friend-card {
-  animation-delay: 0.5s;
-}
-
-.columns.is-multiline  .column:nth-child(6) .friend-card {
-  animation-delay: 0.6s;
 }

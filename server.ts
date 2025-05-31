@@ -24,16 +24,6 @@ router
     const data = await loadLinks();
     const html = await Deno.readTextFile(join(__dirname,  "templates", "index.html")); 
     
-    const navHtml = `
-      <div class="tabs is-boxed is-centered mb-5">
-        <ul>
-          ${data.categories.map(category  => `
-            <li><a href="#${category.name}">${category.name}</a></li> 
-          `).join("")}
-        </ul>
-      </div>
-    `;
-    
     const categoriesHtml = data.categories.map(category  => `
       <div class="category-box mb-6" id="${category.name}"> 
         <h2 class="title is-4 has-text-primary">
@@ -86,7 +76,6 @@ router
     `).join("");
     
     const rendered = html 
-      .replace("<!-- NAV_PLACEHOLDER -->", navHtml)
       .replace("<!-- CATEGORIES_PLACEHOLDER -->", categoriesHtml);
     
     ctx.response.headers.set("Content-Type",  "text/html");

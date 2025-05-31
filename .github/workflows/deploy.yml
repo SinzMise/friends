@@ -46,6 +46,6 @@ jobs:
 
     - name: Deploy using Deploy Token 
       run: |
-        deployctl deploy --project=szn-friends --token=$DENO_DEPLOY_TOKEN server.ts
+        deployctl deploy --project=szn-friends --token=$DENO_DEPLOY_TOKEN --prod server.ts
       env:
         DENO_DEPLOY_TOKEN: ${{ secrets.DENO_DEPLOY_TOKEN }}
