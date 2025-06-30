@@ -1,0 +1,564 @@
+- name: 大佬们
+  list: 
+    - name: 安知鱼
+      url: https://blog.anheyu.com/
+      avatar: https://img01.anheyu.com/useruploads/90/2023/04/23/6444e85234e51.jpg
+      desc: 生活明朗，万物可爱
+      cover: https://npm.elemecdn.com/anzhiyu-theme-static@1.1.6/img/blog.anheyu.com.jpg
+    - name: 轻笑Chuckle
+      url: https://www.qcqx.cn
+      avatar: https://www.qcqx.cn/img/head.webp
+      desc: 宁静致远,倾尘轻笑
+      cover: https://www.qcqx.cn/img/qcqx.webp
+    - name: SeaEpoch
+      url: https://www.seayj.cn
+      avatar: https://www.seayj.cn/img/avatar.png
+      desc: 她站在那里，就像一个小小的永恒！
+      cover: https://www.seayj.cn/img/siteshoot.jpg
+    - name: 晓雨杂记
+      url: https://lihaoyu.cn
+      avatar: https://blog-api.lihaoyu.cn/images/profile/avatar-128x.webp
+      desc: 也许我们会分别，但我们将永远不会忘记彼此。
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://lihaoyu.cn
+    - name: 山岳库博
+      url: https://kmar.top/
+      avatar: https://npm.elemecdn.com/@kmar/fonts@1/avatar/own.png
+      cover: https://npm.elemecdn.com/@kmar/fonts@1/sc/own.jpg
+      desc: 开发学习启发性二刺螈
+    - name: Ariasakaの小窝
+      url: https://blog.yaria.top
+      avatar: https://bu.dusays.com/2023/06/30/649e9ec88cf47.png
+      desc: 人有悲欢离合 月有阴晴圆缺
+      cover: https://vercel.yaria.top/img/siteshot.png
+    - name: 勿埋我心
+      url: https://www.calmxin.com/
+      avatar: https://www.calmxin.com/favicon.ico
+      desc: 我要这天，再遮不住我的眼；要这地，再埋不了我的心。
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://www.calmxin.com/
+    - name: iMaeGoo’s Blog
+      url: https://www.imaegoo.com
+      avatar: https://www.imaegoo.com/images/avatar.jpg
+      desc: 虹墨空间站
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://www.imaegoo.com
+    - name: 贰猹的小窝
+      url: https://noionion.top/
+      avatar: https://pub-noionion.oss-cn-hangzhou.aliyuncs.com/head.jpg
+      desc: 用这生命中的每一秒，给自己一个不后悔的未来
+      cover: https://pub-noionion.oss-cn-hangzhou.aliyuncs.com/noionion.top.png
+    - name: 定の栈
+      url: https://saop.cc
+      avatar: https://saop.cc/avatar.webp
+      cover: https://saop.cc/siteshot.webp
+      desc: LINK START!
+    - name: Guoqi Sun
+      url: https://blog.sunguoqi.com
+      avatar: https://assets.guoqi.dev/images/avatar.png
+      desc: Try, fail, retry. That's the rhythm of growth.
+      cover: https://image.thum.io/get/width/400/crop/800/allowJPG/wait/10/noanimate/https://blog.sunguoqi.com
+    - name: Echo 的小窝
+      url: https://www.liveout.cn/
+      avatar: https://yy.liveout.cn/photo/photo2.jpg
+      desc: 漂泊于互联中的一个小窝
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://www.liveout.cn/
+    - name: 米米的博客
+      url: https://zhangshuqiao.org
+      avatar: https://gravatar.loli.net/avatar/f56980e9dc026727282a04eea02b4f4d?s=512
+      desc: 米米的博客！！
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://zhangshuqiao.org
+    - name: MHuiG
+      url: https://mhuig.top
+      avatar: https://jsd.onmicrosoft.cn/npm/mhg@latest
+      desc: 「Be Yourself Make a Difference」
+      cover: https://jsd.onmicrosoft.cn/npm/mhgoos@0.0.1655533137084/web.png
+    - name: 杜老师说
+      url: https://dusays.com
+      avatar: https://cdn.dusays.com/avatar.png
+      desc: 师者，传道，授业，解惑！
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://dusays.com
+    - name: Leonus
+      url: https://blog.leonus.cn/
+      avatar: https://q1.qlogo.cn/g?b=qq&nk=990320751&s=5
+      desc: 进一寸有进一寸的欢喜。
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://blog.leonus.cn/
+    - name: 小N同学
+      url: https://www.imcharon.com/
+      avatar: https://img.cdn.nesxc.com/upload/wordpress/bedf33e068e4abe0beceb1d1ab00f99f.jpg
+      desc: 青石落晚巷 故人未还乡
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://www.imcharon.com
+    - name: Android
+      url: https://android99.com
+      avatar: https://android99.com/img/avatar.png
+      desc: 边缘矩阵
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://android99.com
+    - name: 张洪Heo
+      url: https://blog.zhheo.com/
+      avatar: https://bu.dusays.com/2022/12/28/63ac2812183aa.png
+      desc: 分享设计与科技生活 
+      cover: https://bu.dusays.com/2023/03/03/6401bcbf1d33b.webp
+    - name: 刘洪亮Leo
+      url: https://lhliang.com
+      avatar: https://lhliang.com/img/avatar.webp
+      desc: 不忘初心，方得始终
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://lhliang.com
+    - name: 张时贰
+      url: https://zhsher.cn
+      avatar: https://q1.qlogo.cn/g?b=qq&nk=1310446718&s=5
+      desc: 环转码，爱敲代码的小张！
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://zhsher.cn
+    - name: Tianli
+      url: https://blog.tianli0.top/
+      avatar: https://q2.qlogo.cn/headimg_dl?dst_uin=507249007&spec=640
+      desc: 自知之明是最可贵的知识！
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://blog.tianli0.top/
+    - name: 时光日志
+      url: https://www.timelogs.cn
+      avatar: https://www.imageoss.com/images/2023/10/13/tlogad52d3ad75546484.png
+      desc: 纪念流失的岁月
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://www.timelogs.cn
+    - name: 葱苓小筑
+      url: https://blog.ciraos.top
+      avatar: https://blog.ciraos.top/assets/avatar.avif
+      desc: "Don't worry, Be happy."
+      cover: https://blog.ciraos.top/siteshot.avif
+    - name: Wayne's Blog
+      url: https://wrans.top
+      avatar: https://jsd.onmicrosoft.cn/gh/wayne0926/myphoto@master/img/avatar.jpg
+      desc: "以梦为马，不负韶华。"
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://wrans.top
+    - name: 铭心石刻
+      url: https://blog.kouseki.cn/
+      avatar: https://blog.kouseki.cn/imgs/avatar.webp
+      desc: 愿岁并谢，与友长兮
+      cover: https://blog.kouseki.cn/imgs/siteshot.webp
+    - name: 猫羽のブログす
+      url: https://www.maoyv.cn/
+      avatar: https://love-1307045615.cos.ap-chongqing.myqcloud.com/tx_574aac60d580c9f1_ys.jpg
+      desc: 欢迎来到猫羽のブログす~分享技术，享受生活，体会成长，感受乐趣！
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://www.maoyv.cn/
+    - name: 猫羽のブログす（新站）
+      url: https://www.maoyv.com/
+      avatar: https://love-1307045615.cos.ap-chongqing.myqcloud.com/tx_574aac60d580c9f1_ys.jpg
+      desc: 空中有颗星为你而亮
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://www.maoyv.com/
+    - name: 风起
+      url: https://www.fqsq.wang/
+      avatar: https://resource.fqxk.com.cn/favicon.png
+      desc: 愿我们都能被世界温暖相拥
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://www.fqsq.wang/
+    - name: Mycpen
+      url: https://blog.cpen.top/
+      avatar: https://blog.cpen.top/img/avatar.jpg
+      desc: 这是一个有趣的博客
+      cover: https://blog.cpen.top/img/siteshot.jpg
+    - name: W4J1e's blog
+      avatar: https://cravatar.cn/avatar/8def0c8c73b56dc0e18744a9a43d70f4
+      url: https://hin.cool
+      desc: 总是偏爱不务正业
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://hin.cool/
+    - name: Fomalhaut🥝
+      url: https://www.fomal.cc/
+      avatar: https://www.fomal.cc/assets/avatar.webp
+      desc: Future is now 🍭🍭🍭
+      cover: https://source.fomal.cc/siteshot/www.fomal.cc.webp
+    - name: 醉月酿星河
+      url: https://blog.catrol.cn/
+      avatar: https://img.catrol.cn/avatar/avatar-head-only.jpg
+      desc: 就在这里发电
+      cover: https://image.thum.io/get/width/400/crop/800/allowJPG/wait/20/noanimate/https://blog.catrol.cn/
+    - name: CyanFalse's Weblog
+      url: https://blog.eurekac.cn
+      avatar: https://registry.npmmirror.com/chenyfan-oss/4.0.0/files/512.jpg
+      desc: I'm CyanFalse,New to Here.
+      cover: https://image.thum.io/get/width/400/crop/800/allowJPG/wait/20/noanimate/https://blog.eurekac.cn
+    - name: 阿锋的小宇宙
+      url: https://feng.pub
+      avatar: https://cravatar.cn/avatar/868740183b995d2707e307ce0a89633a?s=200
+      desc: 沧海一粟，微亮渺小一只虫。
+      cover: https://image.thum.io/get/width/400/crop/800/allowJPG/wait/20/noanimate/https://feng.pub
+    - name: 白云苍狗
+      url: https://www.imalun.com
+      avatar: https://www.imalun.com/images/avatar.jpg?v=1
+      desc: 醒，亦在人间；梦，亦在人间。
+      cover: https://image.thum.io/get/width/400/crop/800/allowJPG/wait/20/noanimate/https://www.imalun.com
+    - name: 半方池水半方田
+      url: https://uuanqin.top/
+      avatar: https://cdn.gallery.uuanqin.top/img/avatar.webp
+      desc: 只能懂一点点
+      cover: https://image.thum.io/get/width/400/crop/800/allowJPG/wait/20/noanimate/https://uuanqin.top/
+    - name: 朽丘秋雨
+      url: https://koxiuqiu.cn/
+      avatar: https://cdn.koxiuqiu.cn/koxiuqiu/img/klcdm_big.webp
+      desc: 一定会和喜欢的人在夏日夜晚牵手慢步
+      cover: https://image.thum.io/get/width/400/crop/800/allowJPG/wait/20/noanimate/https://koxiuqiu.cn/
+    - name: 网友小宋
+      url: https://xyzbz.cn/
+      avatar: https://bu.dusays.com/2023/07/25/64bf920527086.png
+      desc: 一介草民，只为生活！
+      cover: https://image.thum.io/get/width/400/crop/800/allowJPG/wait/20/noanimate/https://xyzbz.cn/
+    - name: 南蛮子懋和
+      url: https://www.dao.js.cn/
+      avatar: https://www.dao.js.cn/zb_users/upload/2021/10/202110151634246697912592.png
+      desc: 李懋和，俗名李栋梁。书法、国画爱好者，互联网安全与前端建设者。
+      cover: https://image.thum.io/get/width/400/crop/800/allowJPG/wait/20/noanimate/https://www.dao.js.cn/
+    - name: 青桔气球
+      url: https://blog.qjqq.cn/
+      avatar: https://q2.qlogo.cn/headimg_dl?dst_uin=1645253&spec=640
+      desc: 分享网络安全与科技生活
+      cover: https://q2.qlogo.cn/headimg_dl?dst_uin=1645253&spec=640
+    - name: 微光档案
+      url: https://bikari.top
+      avatar: https://cravatar.cn/avatar/ECB2EA87C4532F007838D86D02798F89
+      desc: 虚幻的幸福
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://bikari.top
+    - name: 风记星辰
+      url: https://www.thyuu.com
+      avatar: https://std.thyuu.com/logo.svg
+      desc: 热爱你来过的每度温暖
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://www.thyuu.com
+    - name: 朽丘恋秋雨
+      url: https://blog.koxiuqiu.cc
+      avatar: https://blog.koxiuqiu.cc/img/avatar/xiaokeb.png
+      desc: 一定会和喜欢的人在夏日夜晚牵手慢步
+      cover: https://image.thum.io/get/width/400/crop/800/allowJPG/wait/20/noanimate/https://blog.koxiuqiu.cc
+- name: 小伙伴们
+  list: 
+    - name: 甜鱼/Ayu
+      url: https://ayu.land/
+      avatar: https://ayu.land/about/Ayu.jpg
+      desc: 三脚猫多面手，努力学习世界的一切。
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://ayu.land/
+    - name: 小鹿的个人网站
+      url: https://www.siena.zone
+      avatar: https://www.siena.zone/favicon_compressed.png
+      desc: 跳吧，在无比宏大的星系！
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://www.siena.zone
+    - name: Aciano
+      url: https://aciano.top/
+      avatar: https://jsd.onmicrosoft.cn/npm/aciano-cdn@1.0.13/avatar.jpg
+      desc: 零碎的岛屿总会找到海.
+      cover: https://jsd.onmicrosoft.cn/npm/aciano-cdn@1.0.13/FriendLinkScreenShot/amnesia-f.vercel.app.png
+    - name: 奇思妙想录
+      url: https://blog.nicebao.com
+      avatar: https://blog.nicebao.com/usr/themes/Sunny/style/avatar/01.webp
+      desc: 脚步追光，心随梦动
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://blog.nicebao.com
+    - name: 喵二の小博客
+      url: https://www.miaoer.net/
+      avatar: https://static.miaoer.net/logo/avatar.webp
+      desc: 缘，妙不可言
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://www.miaoer.net/
+    - name: Ordis
+      url: https://imbhj.com
+      avatar: https://jsd.onmicrosoft.cn/gh/SinzMise/picx-images-hosting@master/20230717/202208032018823.2qvsadcu1qw0.webp
+      desc: 船到桥头自然直，柳暗花明又一村
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://imbhj.com
+    - name: ANXYの小窝
+      url: https://blog.anxy.top/
+      avatar: https://q2.qlogo.cn/headimg_dl?dst_uin=2622979530&spec=640
+      desc: 记住你！自己！
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/800/crop/800/https://blog.anxy.top/
+    - name: 月光小镇
+      url: https://mooncc.cn/
+      avatar: https://mooncc.cn/img/avatar.png
+      desc: 月光小镇，一个破破的小镇.
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://mooncc.cn/?w=1920&h=1080
+    - name: 希乐博客
+      url: https://blog.xlenco.top/
+      avatar: https://q1.qlogo.cn/g?b=qq&nk=1043865083&s=5
+      desc: 总有人间人间一两风，吹我十万八千梦
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://blog.xlenco.top/
+    - name: 福福不服
+      url: https://ffbf.top
+      avatar: https://ffbf.top/upload/logo3.jpeg
+      desc: 不服就是不服
+      cover: https://ffbf.top/upload/%E4%B8%BB%E9%A1%B5%E5%B0%81%E9%9D%A2.png
+    - name: 追梦幻境·云之都
+      url: https://blog.dreamerhe.cn/
+      avatar: https://cdn.img.dreamerhe.cn/picx-images-hosting/dreamerstarlogo-removebg-preview.9gwi3fldv6.webp
+      desc: 朝着梦想前进，纵有万般阻挠，也绝不会让我停下脚步，待到成功时，之喜唯有我独享！
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://blog.dreamerhe.cn/
+    - name: Xiobb’s Blog
+      url: https://www.imxb.de/?_ref=blog.sinzmise.top
+      avatar: https://q2.qlogo.cn/headimg_dl?dst_uin=3506642728&spec=640
+      desc: 听见笔尖回声.
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://www.imxb.de
+    - name: foxcat（狐狸猫的博客）
+      url: https://blog.foxcat.eu.org/
+      avatar: https://q.qlogo.cn/headimg_dl?dst_uin=3608275247&spec=640&img_type=jpg
+      desc: 你我皆未来∎
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://blog.foxcat.eu.org/
+    - name: Gaspard の传火祭祀场
+      url: https://www.gaspard.top/
+      avatar: https://speedup.gaspard.top/info/Avatar.jpg
+      desc: 庐山烟雨浙江潮，未至千般爱不消
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://www.gaspard.top/
+    - name: 阿方的博客
+      url: https://fang.blog.miri.site/
+      avatar: https://img.lrurl.top/FangAvatar
+      desc: 这是一只啥都不会的屑阿方
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://fang.blog.miri.site/
+    - name: 落落のBlog
+      url: https://www.whaleluo.top/
+      avatar: https://q1.qlogo.cn/g?b=qq&nk=2734184475&s=640
+      desc: 海的那边还是海吗？
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://www.whaleluo.top/
+    - name: 俊逸的博客
+      url: https://lijunyi.xyz/
+      avatar: https://lijunyi.xyz/logo.png
+      desc: 一枚主职Java、副职前端的程序猿
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://lijunyi.xyz/
+    - name: Calyee
+      url: https://blog.calyee.top/
+      avatar: https://blog.calyee.top/img/avatar.jpg
+      desc: 追求充实，分享快乐
+      cover: https://blog.calyee.top/img/siteshot.png
+    - name: 小丁的屋舍
+      url: https://xding.top/
+      avatar: https://xding.top/face.png
+      desc: 谈笑有鸿儒，往来无白丁
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://xding.top/
+    - name: 冬天的小窝
+      url: https://www.iamdt.cn/
+      avatar: https://s1.ax1x.com/2022/07/04/jJlQ1K.png
+      desc: 人生若只如初见，何事秋风悲画扇。
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://www.iamdt.cn/
+    - name: 郑文峰的博客
+      desc: 朝闻道,夕死可矣
+      avatar: https://www.zhengwenfeng.com/img/me.jpg
+      url: https://www.zhengwenfeng.com
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://www.zhengwenfeng.com
+    - name: Naive Koala 🐨
+      desc: Live and learn. ✍️
+      avatar: https://www.xalaok.top/favicon.png
+      url: https://www.xalaok.top/
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://www.xalaok.top/
+    - name: 微霞
+      url: https://yuuu.org
+      avatar: https://cdn.yuuu.org/img/avatar.webp
+      desc: 水风清，晚霞明
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://yuuu.org
+    - name: 孤熵小狼
+      url: https://blog.furen.link
+      avatar: https://blog.furen.link/upload/shang.webp
+      desc: 趁年轻，多闯荡
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://blog.furen.link
+    - name: 奥奥の探索日记
+      url: https://blog.shaoao.top/
+      avatar: https://cccimg.com/view.php/f8a4b6199c0c036da1f160b12d01f50d.jpg
+      desc: 闪耀的时代 会为你而来
+      cover: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/anzhiy.cn.jpg
+    - name: Daoker小站
+      url: https://daoker.cc
+      avatar: http://daoker.cc/wp-content/uploads/2022/08/cat.png
+      desc: 分享见闻，记录生活。
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://daoker.cc
+    - name: LZHの小窝
+      url: https://blog.lzh.life/
+      avatar: https://blog.lzh.life/img/logo.png
+      desc: 凡是过往，皆为序章
+      cover: https://blog.lzh.life/img/123.jpg
+    - name: lveMonsiのBlog
+      url: https://blog.lvems.top/
+      avatar: https://jsd.cdn.storisinz.site/gh/lveMonsi/ImgPlus/img/202307151450821.jpg
+      desc: 无限摸鱼🐟
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://blog.lvems.top/
+    - name: 彬彬加冰
+      url: https://blog.wzwzx.cn
+      avatar: https://cdn.wzwzx.cn/binbin-w8sl.png
+      desc: 走进我的影子，触摸我的心
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://blog.wzwzx.cn
+    - name: Isoheptane
+      url: https://blog.cascade.moe/
+      avatar: https://cascade.moe/images/avatar.webp
+      desc: 工程师猫娘
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://blog.cascade.moe/
+    - name: 雨宮千夏の博麗神社
+      url: https://blog.uuz.moe/
+      avatar: https://weavatar.com/avatar/25b6f36c5c5bc025ec9f6d885baca0ad?s=500&d=mm&r=g
+      desc: 永遠とはそういうこと。ワビの世界よ。
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://blog.uuz.moe/
+    - name: 清羽飞扬
+      url: https://blog.liushen.fun/
+      avatar: https://blog.liushen.fun/info/avatar.ico
+      desc: 柳影曳曳，清酒孤灯，扬笔撒墨，心境如霜
+      cover: https://blog.liushen.fun/info/siteshot.jpg
+    - name: 杰帕斯の小窝
+      url: https://japerz.com
+      avatar: https://q.qlogo.cn/g?b=qq&nk=1952135253&s=100
+      desc: 杰帕斯的博客
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://japerz.com
+    - name: 星の野
+      avatar: https://bu.dusays.com/2023/10/01/6519291503349.jpg
+      desc: 我自是年少，韶华倾负
+      url: https://blog.byer.top/
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://blog.byer.top/
+    - name: Souiken’s Homepage
+      avatar: https://souiken.moe/img/avatar.webp
+      desc: 愿我们度过这个漫漫长夜之后，依旧能看到那旭日东升。
+      url: https://souiken.moe/
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://souiken.moe/
+    - name: PuddingKCの小站
+      avatar: https://img.fastmirror.net/s/2024/11/12/67335aef723ed.png
+      desc: 愿你所热爱的依旧不减当年。
+      url: https://www.puddingkc.com/
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://www.puddingkc.com/
+    - name: MBRjun-Blog
+      avatar: https://cos.mbrjun.cn/PICS/LG4v3avatar144px.jpg
+      desc: 我们生活在大地上，但我们的梦想超越天空
+      url: https://www.mbrjun.cn/
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://www.mbrjun.cn/
+    - name: Homulilly
+      avatar: https://homulilly.com/images/avatar.jpg
+      desc: Aroes’s Blog | \萌脇舞以/
+      url: https://homulilly.com
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://homulilly.com
+    - name: 蓝调时刻
+      avatar: https://www.landiaoshike.com/favicon.ico
+      desc: 天在将暗未暗时最美 爱在将爱未爱时最迷人
+      url: https://www.landiaoshike.com/
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://www.landiaoshike.com/
+    - name: XenWayne’s Blog
+      avatar: https://jsd.cdn.storisinz.site/gh/XenWayne/sitefile@master/img/avatar_square.png
+      desc: 寸进具欢喜，万物皆可爱。
+      url: https://xenwayne.top
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://xenwayne.top
+    - name: 白丁往事
+      url: https://blog.rayvv.com/
+      avatar: https://blog.rayvv.com/img/logo.png
+      desc: 起风而行，风静安宁
+      cover: https://img12.360buyimg.com/ddimg/jfs/t1/241644/14/5034/74478/666b03e0F8cf29233/229cc6b304b7e731.jpg
+    - name: haohang
+      url: https://www.shimmerl.top
+      avatar: https://imge.shimmerl.top/mmexport1673241618153.jpg
+      desc: 承诺不值钱, 做个言而有信的人太难了。
+      cover:  https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://www.shimmerl.top
+    - name: 咖啡豆子coffee的小站
+      url: https://blog.kfdzcoffee.cn
+      avatar: https://image.kfdzcoffee.cn/i/1/avatar.png
+      desc: 所有奇迹的始发点
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://blog.kfdzcoffee.cn
+    - name: 雪萌天文台
+      url: https://blog.snowy.moe
+      avatar: https://img.snowy.moe/head.png
+      desc: 发现巷子里的那颗星星
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://blog.snowy.moe
+    - name: 澄沨的漫游茶记
+      url: https://champhoon.xyz/
+      avatar: https://api.champhoon.xyz/favicon/favicon-main.png
+      desc: Stay hungry, Stay foolish.
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://champhoon.xyz/
+    - name: Satell1te_LK
+      url: https://satelk.top
+      avatar: https://q.qlogo.cn/g?b=qq&nk=66870019&s=640
+      desc: 『圣域通天 深层无底，命运迷离，扑朔无期』
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://satelk.top
+    - name: LeZi的猫窝
+      url: https://leziblog.com
+      avatar: https://leziblog.com/logo.jpg
+      desc: 世上本没有博客，直到有了程序员
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://leziblog.com
+    - name: 雨滴思绪
+      url: https://www.qunqin.net/
+      avatar: https://uesu.cn-sy1.rains3.com/halo/gptlogo.png
+      desc: 在繁杂的世界里，我的信念始终锚定在真理的彼岸。
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://www.qunqin.net/
+    - name: Pinpe 的云端
+      url: https://pinpe.top
+      avatar: https://pinpe.top/head.jpg
+      desc: 一个属于自己的云朵。
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://pinpe.top
+    - name: Debug客栈
+      url: https://debuginn.com
+      avatar: https://jsd.cdn.storisinz.site/gh/debuginn/image@main/img/202302182238057.JPG
+      desc: 做一个爱分享的程序猿
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://debuginn.com
+    - name: lhDream
+      url: https://blog.luhua.site
+      avatar: https://blog.luhua.site/upload/avatar.jfif
+      desc: 醉后不知天在水，满船清梦压星河。
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://blog.luhua.site
+    - name: XingJiのBlog
+      url: https://love.xingji.fun/
+      avatar: https://i.p-i.vip/47/20240920-66ed7b168c38c.jpg
+      desc: 迄今所有人生都大写着失败，但不妨碍我继续向前✨
+      cover: https://i.p-i.vip/47/20240920-66ed7b6730ca9.png
+    - name: 无名博客
+      desc: 一个无聊的人罢了～
+      avatar: https://bu.dusays.com/2024/07/23/669f7b016ad0b.jpg
+      url: https://wuminboke.site/
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://wuminboke.site/
+    - name: murenyouの小窝
+      avatar: https://q2.qlogo.cn/headimg_dl?dst_uin=2728984538&spec=100
+      desc: 很高兴认识你
+      url: https://murenyou.cn
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://murenyou.cn
+    - name: Elykia
+      url: https://blog.elykia.cn/
+      avatar: https://bu.dusays.com/2024/10/25/671b2438203a6.gif
+      desc: 致以无暇之人
+      cover: https://bu.dusays.com/2024/10/25/671b50dc2dd2b.png
+    - name: 小妖客栈
+      url: https://wangkay.top
+      avatar: https://picture.wangkay.tech/zibill/2024/04/20240412165509269.png
+      desc: 代码筑梦，AI绘心
+      cover: https://wangkay.top/wp-content/uploads/2024/11/20241121105901854-jietu.png
+    - name: 陵长镜的小博客 
+      url: https://r1n.top 
+      avatar: https://r1n.top/avatar_nr.jpg 
+      desc: Everything collapses, but you rise. 
+      cover: https://r1n.top/siteshot.jpg
+    - name: 厄尔科斯
+      url: https://sikan.moe/
+      avatar: https://sikan.moe/img/akas.png
+      desc: 架空世界-厄尔科斯
+      cover: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://sikan.moe/
+    - name: 萌！萝莉
+      url: https://loliloli.moe
+      avatar: https://img.cdn.loliloli.net/images/2021/01/11/avatar.jpg
+      desc: 一个普通的小博客哦~
+      cover: https://image.thum.io/get/width/400/crop/800/allowJPG/wait/20/noanimate/https://loliloli.moe
+    - name: 洛卡日记
+      url: https://luoca.cn/
+      avatar: https://bu.dusays.com/2024/08/18/66c1b1239a312.png
+      desc: 个人阅读笔记与日常生活留存地
+      cover: https://image.thum.io/get/width/400/crop/800/allowJPG/wait/20/noanimate/https://luoca.cn/
+    - name: FloatSheep
+      url: https://blog.hesiy.cn
+      avatar: https://blog.hesiy.cn/avatar_hu8c96a287a75bfd9f03af418858761485_108988_1320x0_resize_q75_h2_box_2.webp
+      desc: On the other side of obstacles
+      cover: https://image.thum.io/get/width/400/crop/800/allowJPG/wait/20/noanimate/https://blog.hesiy.cn
+    - name: 云团子的博客
+      url: https://blog.cutetuan.cn/
+      avatar: https://blog.cutetuan.cn/static/webAvatar/11727945933180571.png
+      desc: 欸，是谁家的小可爱？
+      cover: https://image.thum.io/get/width/400/crop/800/allowJPG/wait/20/noanimate/https://blog.cutetuan.cn/
+    - name: 亚斯之声
+      url: https://we.owaii.net
+      avatar: https://me.owaii.net/favicon.ico
+      desc: 𝗪𝗲 𝗔𝗿𝗲 𝗛𝘂𝗺𝗮𝗻 𝗕𝗲𝗶𝗻𝗴𝘀, 𝗡𝗼𝘁 𝗛𝘂𝗺𝗮𝗻 𝗗𝗼𝗶𝗻𝗴𝘀.
+      cover: https://image.thum.io/get/width/400/crop/800/allowJPG/wait/20/noanimate/https://we.owaii.net
+    - name: 酸奶云✨
+      url: https://blog.mcyogurt.cn/
+      avatar: https://i.postimg.cc/Lss1ZM3n/avatar.jpg
+      desc: 关于MCの另一个空间
+      cover: https://image.thum.io/get/width/400/crop/800/allowJPG/wait/20/noanimate/https://blog.mcyogurt.cn/
+    - name: 王鑫的小站
+      desc: 我的小站很大，欢迎来我小站玩~
+      avatar: https://wxweb.xyz/wp-content/uploads/2024/05/1716211806-mmexport1716211797071.jpg
+      url: https://wxweb.xyz
+      siteshot: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://wxweb.xyz
+    - name: 王鑫的小屋
+      desc: 暂无介绍
+      avatar: https://img.vone.xin/web/blog-icon.jpg
+      url: https://wonse.info/
+      siteshot: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://wonse.info/
+    - name: 阳帆の小窝
+      desc: 黄鹤一去不复返，白云千载空悠悠
+      avatar: https://blog.wolfyang.fan/icon.png
+      url: https://blog.wolfyang.fan
+      siteshot: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://blog.wolfyang.fan
+    - name: bbb-lsy07
+      desc: 科技激荡人文，洞见智慧本真。
+      avatar: https://i.bbb-lsy07.sbs/upload/quality_restoration_20250211145207618.JPG
+      url: https://i.bbb-lsy07.sbs
+      siteshot: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://i.bbb-lsy07.sbs

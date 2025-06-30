@@ -1,74 +1,37 @@
-# 潮汐友人帐
+# 潮汐有人帐 2.0
 
-[![Deploy Status](https://img.shields.io/github/actions/workflow/status/SinzMise/friends/deploy.yml?label=Deploy)](https://github.com/SinzMise/friends/actions) 
-[![Deno Deploy](https://img.shields.io/badge/Deno-Deploy-green?logo=Deno)](https://deno.land/) 
+全新更新！潮汐友人帐 2.0全新采用React+Tailwind CSS编写，并且同时支持Vercel、Netlify和Deno Deploy部署！
 
-新版友人帐使用用 Deno + Bulma 构建，大大提高了效率
+## 想要添加屋主的友链？
 
-## 和屋主加友链的要求
+请看：https://friends.storical.space/add
 
-- **禁广告**
-- 最好**先友后链**
-- 最好是我比较熟悉的人；
-  - 「熟悉」指的是：在过去一年内，我见过你至少五次。
-  - 陌生人的 Pull Requests 最终是否合并则取决于我对你的印象。
-- 网站内没有安插有令人不适的内容
-    - 示例 1：暴力、血腥、R-18、NSFW 等；
-    - 示例 2：非常高对比颜色（这会让人的眼睛很不适）；
-    - 示例 3：遍布过多甚至影响正常访问的广告内容；
-    - 更详细的「令人不适的内容」的最终解释权归我所有
+## 想要部署属于自己的友链？
 
-如果你认为自己符合了要求，就可以提交 Pull Request 了。
+### Vercel 部署
+1. 将项目导入Vercel
+2. 无需额外配置，vercel.json已包含所需配置
+3. 部署即可
 
-## 友链流程
+### Netlify 部署
+1. 将项目导入Netlify
+2. 构建命令: `pnpm build`
+3. 发布目录: `dist/static`
+4. 其他配置已包含在netlify.toml中
 
-### 将我的网站添加到你的友链列表中
+### Deno Deploy 部署
+1. 确保已安装Deno
+2. 运行 `deno task build`
+3. 部署构建后的dist/static目录
 
-我的信息如下：
+## 想要开发？
+```bash
+# 安装依赖
+pnpm install
 
-- 链接：https://blog.storical.space/
-- 头像（128x，WebP）：https://blog.storical.space/images/icon.png
-  - Gravatar E-Mail Hash：`e873808e83cf6b677b23b760c77523fb660b5db100791b3cb9a99cd5c25f9e84`
-- 站点名称：汐塔魔法屋
-- 昵称：王九弦SZ·Ninty
-- 主题色：`#39C5BB`
-- 描述：种下一颗有故事的种子，让它带着魔法和奇迹生根发芽
+# 开发模式
+pnpm dev
 
-### 准备好你的网站信息
-
-标准情况下你需要提供描述、头像链接、站点名称、站点截图和网站链接
-
-你的头像应为对称的方形或圆形，否则加载时可能出现一些问题
-
-请确保你提供的信息是适合全年龄段的人群的内容
-
-打开本仓库的 `links.yml` 并在最末尾添加你的站点
-
-下述是一个对你有用的示例：
-```yml
-- name: 汐塔魔法屋
-  url: https://blog.storical.space/
-  avatar: https://blog.storical.space/images/icon.png
-  desc: 种下一颗有故事的种子，让它带着魔法和奇迹生根发芽
-  topimg: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://blog.sinzmise.top/
+# 构建生产版本
+pnpm build
 ```
-
-> [!IMPORTANT]
-> 请严格遵循 YAML 的格式编写。
-
-确认你填写的信息是否无误，并打开一个 Pull Request。
-
-当你的 Pull Request 按流程顺利合并，之后等待Github Action和Deno Deploy运行，你的网站会显示在我的友链页（或者缓存刷新后）。
-
-## 写在最后
-
-首先，如果你的文章很牛，就有机会添加到大佬分类里面！
-
-其次，严格来说，一旦最后 Pull Request 顺利合并，你的友链将不会被移除。但是，因下述两种原因，你的友链可能在命中时被Github Actions自动移除：
-
-- 出现了无法访问的问题（例如 404、502、522 等）；
-  - 由于部分 CDN 可能会拦截我们的检查请求，因此如有检查错误，请您及时告知我们。
-- 在整理友链时不小心丢失数据。
-
-你完全可以在出现这种状况时向我提出重新添加友链的要求，但请在发起 Pull Request 时带上 `#LOST` 的 Tag。
-
