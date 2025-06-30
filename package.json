@@ -1,6 +1,5 @@
 {
-  "name": "tide-friends-link",
-  "private": true,
+  "name": "tide_friends_link",
   "version": "2.0.0",
   "type": "module",
   "scripts": {
