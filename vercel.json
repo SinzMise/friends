@@ -13,6 +13,10 @@
     {
       "src": "/(.*)",
       "dest": "/dist/static/index.html"
+    },
+    {
+      "src": "/rss.json",
+      "dest": "/dist/static/rss.json"
     }
   ]
 }
