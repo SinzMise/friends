@@ -1,10 +1,3 @@
-# 潮汐友人帐
-
-[![Deploy Status](https://img.shields.io/github/actions/workflow/status/SinzMise/friends/deploy.yml?label=Deploy)](https://github.com/SinzMise/friends/actions) 
-[![Deno Deploy](https://img.shields.io/badge/Deno-Deploy-green?logo=Deno)](https://deno.land/) 
-
-新版友人帐使用用 Deno + Bulma 构建，大大提高了效率
-
 ## 和屋主加友链的要求
 
 - **禁广告**
@@ -42,7 +35,7 @@
 
 请确保你提供的信息是适合全年龄段的人群的内容
 
-打开本仓库的 `links.yml` 并在最末尾添加你的站点
+打开 [https://github.com/SinzMise/friends/blob/main/links.yml](https://github.com/SinzMise/friends/blob/main/links.yml) 并在最末尾添加你的站点
 
 下述是一个对你有用的示例：
 ```yml
@@ -53,7 +46,6 @@
   topimg: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://blog.sinzmise.top/
 ```
 
-> [!IMPORTANT]
 > 请严格遵循 YAML 的格式编写。
 
 确认你填写的信息是否无误，并打开一个 Pull Request。

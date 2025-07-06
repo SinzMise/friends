@@ -1,14 +1,13 @@
-import YML from "yamljs";
-import fs from "fs";
-
+const YML = require('yamljs')
+const fs = require('fs')
 
 let friends = [],
-    data = YML.parse(fs.readFileSync('src/data/links.yaml').toString().replace(/(?<=rss:)\s*\n/g, ' ""\n'));
+    data = YML.parse(fs.readFileSync('links.yml').toString().replace(/(?<=rss:)\s*\n/g, ' ""\n'));
 
-data.forEach((entry, index) => {
+data.categories.forEach((entry, index) => {
     let lastIndex = 2;
     if (index < lastIndex) {
-        friends = friends.concat(entry.list);
+        friends = friends.concat(entry.links);
     }
 });
 
@@ -23,6 +22,6 @@ const friendData = {
 const friendJSON = JSON.stringify(friendData, null, 2);
 
 // 写入 friend.json 文件
-fs.writeFileSync('dist/static/rss.json', friendJSON);
+fs.writeFileSync('./rss.json', friendJSON);
 
 console.log('rss.json 文件已生成。');
