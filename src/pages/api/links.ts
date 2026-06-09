@@ -1,6 +1,8 @@
 import type { APIRoute } from 'astro';
 import { getLinksData } from '../../utils/links';
 
+export const prerender = true;
+
 export const GET: APIRoute = () => {
   const data = getLinksData();
   return new Response(JSON.stringify(data), {
