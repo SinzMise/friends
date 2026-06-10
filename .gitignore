@@ -27,12 +27,12 @@ _testmain.go
 *.exe
 *.test
 
-docs/
-docs
-./docs
-./docs/
-/docs/
-/docs
+dist/
+dist
+./dist
+./dist/
+/dist/
+/dist
 .DS_Store
 
 node_modules/
