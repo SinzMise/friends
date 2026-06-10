@@ -2,7 +2,7 @@
   class_desc: 膜拜大佬~~
   type: card
   topimg_suffix: /img/default.avif
-  link_list: 
+  link_list:
     - name: 安知鱼
       link: https://blog.anheyu.com/
       avatar: https://img01.anheyu.com/useruploads/90/2023/04/23/6444e85234e51.jpg
@@ -86,7 +86,7 @@
     - name: 张洪Heo
       link: https://blog.zhheo.com/
       avatar: https://bu.dusays.com/2022/12/28/63ac2812183aa.png
-      descr: 分享设计与科技生活 
+      descr: 分享设计与科技生活
       siteshot: https://bu.dusays.com/2023/03/03/6401bcbf1d33b.webp
     - name: 刘洪亮Leo
       link: https://lhliang.com
@@ -111,12 +111,12 @@
     - name: 葱苓sama
       link: https://blog.ciraos.top
       avatar: https://s2.loli.net/2025/12/26/F9nkl7yfuo6TN5p.png
-      descr: "Don't worry, Be happy."
+      descr: Don't worry, Be happy.
       siteshot: https://s2.loli.net/2025/12/26/IregoFzuSiCl5yb.png
     - name: Wayne's Blog
       link: https://wrans.top
       avatar: https://jsd.cdn.sinzmise.top/gh/wayne0926/myphoto@master/img/avatar.jpg
-      descr: "以梦为马，不负韶华。"
+      descr: 以梦为马，不负韶华。
       siteshot: https://s0.wp.com/mshots/v1/https://wrans.top
     - name: 铭心石刻
       link: https://blog.kouseki.cn/
@@ -202,7 +202,7 @@
   class_desc: 那些人，那些事
   type: item
   topimg_suffix: /img/default.avif
-  link_list: 
+  link_list:
     - name: Aciano
       link: https://aciano.top/
       avatar: https://jsd.cdn.sinzmise.top/npm/aciano-cdn@1.0.13/avatar.jpg
@@ -392,7 +392,7 @@
       link: https://www.shimmerl.top
       avatar: https://imge.shimmerl.top/mmexport1673241618153.jpg
       descr: 承诺不值钱, 做个言而有信的人太难了。
-      siteshot:  https://s0.wp.com/mshots/v1/https://www.shimmerl.top
+      siteshot: https://s0.wp.com/mshots/v1/https://www.shimmerl.top
     - name: 咖啡豆子coffee的小站
       link: https://blog.kfdzcoffee.cn
       avatar: https://image.kfdzcoffee.cn/i/1/avatar.png
@@ -453,10 +453,10 @@
       avatar: https://picture.wangkay.tech//Strapi/202501142115467.png
       descr: 精选优质内容，一站式上网体验
       siteshot: https://picture.wangkay.tech//Strapi/202502271505133.png
-    - name: 陵长镜的小博客 
-      link: https://r1n.top 
-      avatar: https://r1n.top/avatar_nr.jpg 
-      descr: Everything collapses, but you rise. 
+    - name: 陵长镜的小博客
+      link: https://r1n.top
+      avatar: https://r1n.top/avatar_nr.jpg
+      descr: Everything collapses, but you rise.
       siteshot: https://r1n.top/siteshot.jpg
     - name: 厄尔科斯
       link: https://sikan.moe/
@@ -566,13 +566,13 @@
     - name: MuXiaoChen🍊
       link: https://miraii.cn/
       avatar: https://tuchuang.voooe.cn/images/2025/11/28/Mx_1761296939311296300.webp
-      descr: No pains, no gains. 
+      descr: No pains, no gains.
       siteshot: https://tuchuang.voooe.cn/images/2025/11/28/site.webp
 - class_name: 特殊分类 —— 单向
   class_desc: 我主动添加的友链
   type: item
   topimg_suffix: /img/default.avif
-  link_list: 
+  link_list:
     - name: W4J1e's blog
       avatar: https://cravatar.cn/avatar/8def0c8c73b56dc0e18744a9a43d70f4
       link: https://hin.cool
@@ -588,3 +588,7 @@
       avatar: https://bu.dusays.com/2024/07/23/669f7b016ad0b.jpg
       link: https://wuminboke.site/
       siteshot: https://s0.wp.com/mshots/v1/https://wuminboke.site/
+    - name: '233'
+      link: https://www.storia.ren/
+      avatar: https://
+      descr: ''
