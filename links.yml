@@ -263,11 +263,6 @@
       avatar: https://img.lrurl.top/FangAvatar
       descr: 这是一只啥都不会的屑阿方
       siteshot: https://s0.wp.com/mshots/v1/https://fang.blog.miri.site/
-    - name: 落落のBlog
-      link: https://www.whaleluo.top/
-      avatar: https://q1.qlogo.cn/g?b=qq&nk=2734184475&s=640
-      descr: 海的那边还是海吗？
-      siteshot: https://s0.wp.com/mshots/v1/https://www.whaleluo.top/
     - name: 俊逸的博客
       link: https://lijunyi.xyz/
       avatar: https://lijunyi.xyz/logo.png
@@ -353,11 +348,11 @@
       avatar: https://q.qlogo.cn/g?b=qq&nk=1952135253&s=100
       descr: 杰帕斯的博客
       siteshot: https://s0.wp.com/mshots/v1/https://japerz.com
-    - name: 星の野
-      avatar: https://bu.dusays.com/2023/10/01/6519291503349.jpg
+    - name: 星屿浮槎
+      avatar: https://blog.byer.ink/api/pro/f/4GOG/ava.jpg
       descr: 我自是年少，韶华倾负
-      link: https://blog.byer.top/
-      siteshot: https://s0.wp.com/mshots/v1/https://blog.byer.top/
+      link: https://blog.byer.ink/
+      siteshot: https://blog.byer.ink/api/pro/f/DZPS/65fc5ad95d192.png
     - name: Souiken’s Homepage
       avatar: https://souiken.moe/img/avatar.webp
       descr: 愿我们度过这个漫漫长夜之后，依旧能看到那旭日东升。
@@ -505,14 +500,9 @@
       siteshot: https://s0.wp.com/mshots/v1/https://blog.kaiqi.wang
     - name: 阿叶Ayeez的小站
       descr: 记录学习历程，记录美好生活
-      avatar: https://blog.ayeez.cn/imgs/photo.jpg
+      avatar: https://qiniu.ayeez.cn/avatar.jpg
       link: https://blog.Ayeez.cn
       siteshot: https://s0.wp.com/mshots/v1/https://blog.Ayeez.cn
-    - name: ZY知识库
-      descr: 一个技术探索与分享的平台
-      avatar: https://blog.pljzy.top/_astro/logo.BxIxyJV1_Z19cEQW.webp
-      link: https://blog.pljzy.top/
-      siteshot: https://s0.wp.com/mshots/v1/https://blog.pljzy.top/
     - name: mccsjs
       descr: 点一盏灯，等一个迷路的夜🍁🍁🍁
       avatar: https://seln.cn/img/head.jpg
