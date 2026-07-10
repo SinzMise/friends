@@ -548,6 +548,11 @@
       avatar: https://tuchuang.voooe.cn/images/2025/11/28/Mx_1761296939311296300.webp
       descr: No pains, no gains.
       siteshot: https://tuchuang.voooe.cn/images/2025/11/28/site.webp
+    - name: jett
+      link: https://jettlin.cn
+      avatar: https://api.jettlin.cn/api/files/1757467798643-user-img.png
+      descr: 暮然回首，那人却在，灯火阑珊处
+      siteshot: http://api.jettlin.cn/api/files/1756696693415-Snipaste_2025-08-27_14-57-25.png
 - class_name: 特殊分类 —— 单向
   class_desc: 我主动添加的友链
   type: item
