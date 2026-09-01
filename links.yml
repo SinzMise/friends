@@ -553,6 +553,10 @@
       avatar: https://api.jettlin.cn/api/files/1757467798643-user-img.png
       descr: 暮然回首，那人却在，灯火阑珊处
       siteshot: http://api.jettlin.cn/api/files/1756696693415-Snipaste_2025-08-27_14-57-25.png
+    - name: 蛋蛋总
+      link: https://buged.cn
+      avatar: https://papers.buged.cn/files/images/blog-logo/login.webp
+      descr: 试错成本并不高，错过成本才高
 - class_name: 特殊分类 —— 单向
   class_desc: 我主动添加的友链
   type: item
