@@ -193,6 +193,10 @@
       avatar: https://hslzz.cn/assets/img/favicon.png
       descr: 与世无争，不染于泥
       siteshot: https://s0.wp.com/mshots/v1/https://blog.hslzz.cn/
+    - name: Dylan's blog
+      link: https://blog.dylanlive.net
+      avatar: https://blog.dylanlive.net/uploads/mvuvpwz7-d7bfe697.jpg
+      descr: Learning, breaking, and writing it all down.
 - class_name: 小伙伴们
   class_desc: 那些人，那些事
   type: item
